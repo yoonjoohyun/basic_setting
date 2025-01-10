@@ -7,6 +7,13 @@
     justify-content:space-between;
     align-items:center;
     padding:1% 1%;
+    z-index:99;
+    @media(width < 980px){
+        height:56px;
+    }
+    @media(width < 480px){
+        height:40px;
+    }
 }
 
 .logo{
@@ -19,6 +26,13 @@
     .logo img{
         width:auto;
         height:2.8rem;
+        cursor:pointer;
+        @media(width < 980px){
+            height:2.4rem;
+        }
+        @media(width < 480px){
+            height:2rem;
+        }
     }
 
 .sns_box{
@@ -42,17 +56,19 @@
     align-items:center;
 }
     .utube_icon{
-        padding-right:10px;
+        margin-right:10px;
         @media(width <= 980px){
             font-size:2.6rem;
             font-weight:100;
+            cursor:pointer;
         }
     }
     .insta_icon{
         @media(width <= 980px){
-            margin-right:10px;
+            margin-right:16px;
             font-size:2.4rem;
             font-weight:100;
+            cursor:pointer;
         }
     }
 
@@ -61,6 +77,9 @@
     font-size:1.8rem;
     font-weight:600;
 }
+    .menu:hover{
+        background-color:rgb(255, 223, 223);
+    }
 
 //Pc 메뉴
 .menu_box_pc{
@@ -85,6 +104,7 @@
 //Mobile 메뉴
 .hamburger{
     margin-right:1%;
+    cursor:pointer;
     @media(width <= 980px){
         display:block;
     }
@@ -98,9 +118,31 @@
         background-color:#333;
         margin-bottom:4px;
     }
+
 .menu_box_mobile{
-    width:100%;
-    height:100%;
+    position: fixed;
+    top: -30%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -100;
+    opacity: 0;
+    visibility: hidden;
+    
+    ul {
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+    }
+    &.is-active {
+        top: 46px;
+        opacity: 1;
+        visibility: visible;
+        
+        ul {
+            transform: translateY(0);
+        }
+    }
     @media(width <= 980px){
         display:block;
     }
@@ -115,10 +157,17 @@
 }
     .menu_box_mobile ul li{
         padding:1% 0;
+        cursor:pointer;
+        box-shadow:0 1px 0 0 #ececec;
     }
+        .menu_box_mobile ul li:last-child{
+            cursor:inherit;
+            padding-top:2%;
+            box-shadow:0 3px 0 0 #ffe4e4;
+        }
 
 .sns_menu{
-    float:right;
+    text-align:right;
 }
 
 

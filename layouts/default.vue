@@ -19,13 +19,13 @@
                 <li class="insta_icon ri-instagram-line"></li>
             </ul>
         </div>
-        <div class="hamburger">
+        <div class="hamburger" @click="toggleMenu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
     </nav>
-    <div class="menu_box_mobile">
+    <div class="menu_box_mobile" :class="{ 'is-active': isMenuOpen }">
         <ul>
             <li class="menu">red</li>
             <li class="menu">orange</li>
@@ -40,5 +40,12 @@
         </ul>
     </div>
 </template>
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const isMenuOpen = ref(false)
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value
+}
+</script>
 <style lang="scss" src="~/assets/scss/navigation.scss"></style>
