@@ -1,0 +1,139 @@
+//네비게이션
+.navi{
+    width:100vw;
+    height:70px;
+    background-color:#ffe8e8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1% 1%;
+}
+
+.logo{
+    width:13%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding:0 1%;
+}
+    .logo img{
+        width:auto;
+        height:2.8rem;
+    }
+
+.sns_box{
+    width:10%;
+    height:100%;
+    font-size:2.8rem;
+    font-weight:100;
+    padding:0 1%;
+    @media(width <= 980px){
+        display:none;
+    }
+    @media(width > 980px){
+        display:block;
+    }
+}
+.sns_box ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+    .utube_icon{
+        padding-right:10px;
+        @media(width <= 980px){
+            font-size:2.6rem;
+            font-weight:100;
+        }
+    }
+    .insta_icon{
+        @media(width <= 980px){
+            margin-right:10px;
+            font-size:2.4rem;
+            font-weight:100;
+        }
+    }
+
+//메뉴 공용
+.menu{
+    font-size:1.8rem;
+    font-weight:600;
+}
+
+//Pc 메뉴
+.menu_box_pc{
+    width:70%;
+    height:100%;
+    @media(width <= 980px){
+        display:none;
+    }
+    @media(width > 980px){
+        display:block;
+    }
+}
+.menu_box_pc ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+//Mobile 메뉴
+.hamburger{
+    margin-right:1%;
+    @media(width <= 980px){
+        display:block;
+    }
+    @media(width > 980px){
+        display:none;
+    }
+}
+    .bar{
+        width:20px;
+        height:3px;
+        background-color:#333;
+        margin-bottom:4px;
+    }
+.menu_box_mobile{
+    width:100%;
+    height:100%;
+    @media(width <= 980px){
+        display:block;
+    }
+    @media(width > 980px){
+        display:none;
+    }
+}
+.menu_box_mobile ul{
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+    .menu_box_mobile ul li{
+        padding:1% 0;
+    }
+
+.sns_menu{
+    float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

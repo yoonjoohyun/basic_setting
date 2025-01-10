@@ -1,0 +1,45 @@
+// assets/scss/main.scss
+
+// 폰트 import
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff');
+
+// 전역 설정
+:root {
+    --font-family: 'MinSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+body {
+    font-family: var(--font-family);
+}
+
+
+*,*::before,*::after,body{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+html{
+    font-family:'min-sans';
+    font-size:62.5%; //기본 폰트사이즈(16px)의 62.5%인 10px = 1rem 으로 사용할 수 있다.
+}
+
+.wrap{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
