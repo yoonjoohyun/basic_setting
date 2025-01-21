@@ -1,6 +1,7 @@
 .wrap{
     width:100vw;
     height:100vh;
+    background-color:#f7f7f7;
 }
 
 .login_box{
@@ -18,7 +19,7 @@
         align-items:center;
         margin:0 auto;
         margin-top:6px;
-        margin-bottom:70px;
+        margin-bottom:50px;
     }
         .logo_box img{
             width:100%;
@@ -27,15 +28,29 @@
 
     .input_box{
         width:90%;
-        height:44px;
-        box-shadow:0 0 1px 1px #c9c9c9 inset;
+        height:38px;
+        box-shadow:0 0 0 1px #c9c9c9 inset;
         border-radius:5px;
         padding-left:14px;
         display:block;
         margin:0 auto;
         line-height:34px;
         margin-top:10px;
+        background-color:rgba(255, 255, 255, 0.05);
     }
+    .input_box:focus{
+        box-shadow:0 0 0 1.5px #222 inset;
+        border:none;
+        outline:none;
+        background-color:rgba(255,255,255,1);
+    }
+    .input_box[type="text"]::placeholder {
+        color: #999;
+    }
+    .input_box[type="password"]::placeholder {
+        color: #999;
+    }
+
     .login_btn{
         width:90%;
         height:44px;
