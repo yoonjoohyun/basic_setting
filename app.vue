@@ -1,7 +1,6 @@
 <template>
-<div class="wrap">
   <NuxtLayout/>
-</div>
+  <NuxtPage />
 </template>
 
 <script setup>

@@ -1,0 +1,32 @@
+.main_bg{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    z-index: -999;
+}
+    .main_title{
+        margin-top:10%;
+        color:#fff;
+        font-size:5rem;
+        font-family: 'S-CoreDream';
+        font-weight: 100;
+        @media(width < 980px){
+            font-size:4rem;
+            font-weight: 100;
+        }
+        @media(width < 480px){
+            font-size:2.6rem;
+        font-weight: 100;
+        }
+    }
+
+
+
+
+
+
+
+

@@ -1,16 +1,16 @@
 <template>
     <nav class="navi">
-        <div class="logo">
-            <img src="~assets/images/logo.png"/>
+        <div class="logo_box">
+            <NuxtLink class="logo" to="/"><img src="~assets/images/logo.png"/></NuxtLink>
         </div>
         <div class="menu_box_pc">
             <ul>
-                <li class="menu">red</li>
-                <li class="menu">orange</li>
-                <li class="menu">yellow</li>
-                <li class="menu">green</li>
-                <li class="menu">blue</li>
-                <li class="menu">purple</li>
+                <li class="menu"><NuxtLink class="txt_box" to="/red">red</NuxtLink></li>
+                <li class="menu"><NuxtLink to="/orange">orange</NuxtLink></li>
+                <li class="menu"><NuxtLink to="/yellow">yellow</NuxtLink></li>
+                <li class="menu"><NuxtLink to="/green">green</NuxtLink></li>
+                <li class="menu"><NuxtLink to="/blue">blue</NuxtLink></li>
+                <li class="menu"><NuxtLink to="/purple">purple</NuxtLink></li>
             </ul>
         </div>
         <div class="sns_box">
@@ -27,12 +27,12 @@
     </nav>
     <div class="menu_box_mobile" :class="{ 'is-active': isMenuOpen }">
         <ul>
-            <li class="menu">red</li>
-            <li class="menu">orange</li>
-            <li class="menu">yellow</li>
-            <li class="menu">green</li>
-            <li class="menu">blue</li>
-            <li class="menu">purple</li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/red">red</NuxtLink></li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/orange">orange</NuxtLink></li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/yellow">yellow</NuxtLink></li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/green">green</NuxtLink></li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/blue">blue</NuxtLink></li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/purple">purple</NuxtLink></li>
             <li class="menu sns_menu">
                 <i class="utube_icon ri-youtube-fill"></i>
                 <i class="insta_icon ri-instagram-line"></i>
