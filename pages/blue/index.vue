@@ -8,4 +8,4 @@
 
 </script>
 
-<style lang="scss" src="~/assets/scss/blue.scss"></style>
+<style lang="scss" scoped src="@/assets/scss/blue.scss"></style>

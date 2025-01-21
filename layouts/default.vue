@@ -1,16 +1,16 @@
 <template>
     <nav class="navi">
         <div class="logo_box">
-            <NuxtLink class="logo" to="/"><img src="~assets/images/logo.png"/></NuxtLink>
+            <NuxtLink class="logo" to="/login"><img src="~/assets/images/logo.png"/></NuxtLink>
         </div>
         <div class="menu_box_pc">
             <ul>
                 <li class="menu"><NuxtLink class="txt_box" to="/red">red</NuxtLink></li>
-                <li class="menu"><NuxtLink to="/orange">orange</NuxtLink></li>
-                <li class="menu"><NuxtLink to="/yellow">yellow</NuxtLink></li>
-                <li class="menu"><NuxtLink to="/green">green</NuxtLink></li>
-                <li class="menu"><NuxtLink to="/blue">blue</NuxtLink></li>
-                <li class="menu"><NuxtLink to="/purple">purple</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/orange">orange</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/yellow">yellow</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/green">green</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/blue">blue</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/purple">purple</NuxtLink></li>
             </ul>
         </div>
         <div class="sns_box">
@@ -48,4 +48,4 @@ const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
 }
 </script>
-<style lang="scss" src="~/assets/scss/navigation.scss"></style>
+<style lang="scss" src="@/assets/scss/navigation.scss"></style>
