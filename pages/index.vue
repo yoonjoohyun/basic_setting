@@ -4,19 +4,21 @@
 </div>
 </template>
 <script setup>
+// auth 미들웨어 적용
+definePageMeta({
+    middleware: ['auth']
+})
 
 const auth = useState('auth')
 
-// 로그인하지 않은 상태에서 접근 시 로그인 페이지로 리다이렉션
-onMounted(() => {
-  if (!auth.value) {
-    navigateTo('/login')
-  }
-})
-
-const handleLogout = () => {
-  auth.value = false
-  navigateTo('/login')
+const handleLogout = async () => {
+    try {
+    // 실제 환경에서는 로그아웃 API 호출
+        auth.value = false
+        await navigateTo('/login')
+    } catch (error) {
+        console.error('로그아웃 중 오류 발생:', error)
+    }
 }
 
 </script>

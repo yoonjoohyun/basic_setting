@@ -35,6 +35,8 @@
     text-align:center;
     line-height:30px;
     cursor:pointer;
+    border-radius:0 0 0 10px;
+    font-size:1.4rem;
     @media(width < 980px){
         top:56px;
         height:26px;
